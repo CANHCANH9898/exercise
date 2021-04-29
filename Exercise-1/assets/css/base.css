@@ -1,0 +1,90 @@
+:root {
+    --white-color : #fff;
+    --text-color : #dbdbdb;
+    --black-color : #000;
+}
+
+/* font chữ cho cả trang */
+
+* {
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* cỡ chữ cho cả trang */
+
+html {
+    line-height: 1.5rem;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.my-container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+
+/* button */
+
+.my-btn {
+    height: 45px;
+    width: 106px;
+    border: 0.5px solid var(--text-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+/* input */
+
+.my--input {
+    height: 52px;
+    width: 400px;
+    padding-left: 20px;
+    border-radius: 50px;
+    display: flex;
+    border: 1px solid var(--text-color);
+    background-color: rgba(245, 245, 245,0.25);
+}
+
+.my--input input {
+    height: 100%;
+    border: 0px;
+    outline: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+/* Custom placeholder */
+
+::-webkit-input-placeholder {
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+/* Icon menu */
+
+.icon-menu {
+    display: none;
+}
+
+/* MOdal */ 
+
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(245, 245, 245,0.5);
+    display: none;
+}

@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1200px) {
+    .nature {
+        display: block;
+    }
+
+    .nature__right {
+        text-align: center;
+        margin: 100px 0px;
+    }
+
+    .watch__item--wrap {
+        padding: 0px 16px;
+    }
+
+    .watch__item:nth-child(2) .watch__item--wrap {
+        margin-left: 0px;
+    }
+
+    .watch__item:nth-child(3) .watch__item--wrap {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .watch__item--wrap {
+        width: auto;
+    }
+
+
+}
+
+/* TABLAB large & MOBILE */
+
+@media only screen and (max-width: 1024px) {
+    .header-top__list {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 500px;
+        background-color: var(--white-color);
+        display: block;
+        padding: 20px;
+        z-index: 1;
+        transform: translateX(-500px);
+        transition: transform linear 0.2s;
+        
+    }
+
+    .header-top__list--item--link {
+        display: block;
+        padding: 20px 30px;
+        color: var(--black-color);
+    }
+
+    .header-top__list--item:last-child {
+        position: relative;
+        left: 27px;
+        top: 15px;
+    }
+
+    .header-top__list--item:last-child .header-top__list--item--link {
+        padding: 14px 24px;
+        background-color: red;
+        color: var(--white-color);
+    }
+
+    .icon-menu {
+        margin-left: auto;
+        font-size: 3.2rem;
+        color: var(--white-color);
+    }
+
+    .navigation:checked ~ .header-top__list {
+        transform: translateX(0px);
+    }
+
+    .navigation:checked ~ .modal {
+        display: block;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .hide-on-tablab-mobile {
+        display: none;
+    }
+    
+}
+
+/* MOBILE */
+@media only screen and (max-width: 739px) {}
